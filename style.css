@@ -1,0 +1,79 @@
+:root{
+  /* Colors */
+  --brand-green: rgb(43,150,41);
+  --brand-offGreen: rgb(116, 212, 114);
+  --brand-grey: rgb(75,75,75);
+  --brand-offGrey: rgb(150,150,150);
+  --brand-offWhite: rgb(242,242,242);
+  /* Fonts */
+  --fonts-header: 'Open Sans', sans-serif;
+  --fonts-body: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--fonts-body);
+  color: var(--brand-grey);
+  padding: 1.2rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fonts-header);
+  font-weight: 700;
+  color: var(--brand-grey);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 { 
+  font-size: 2.5rem; border-bottom: 4px solid var(--brand-green); padding-bottom: 0.5rem; }
+h2 { 
+  font-size: 2rem; padding-bottom: 0.5rem; }
+h3 { 
+  font-size: 1.5rem;}
+h4 { 
+  font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: rgb(102, 102, 102); margin-top: 1.5rem;}
+p  { 
+  margin-bottom: 1rem; }
+
+.button-nav {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  color: var(--brand-offWhite);
+  background-color: var(--brand-green);
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: var(--fonts-header);
+  font-weight: 700;
+  border: 2px solid var(--brand-green);
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: var(--brand-offGrey);
+  color: var(--brand-offGreen);
+}
+
+h2:hover, h2:focus {
+  transition-property: color;
+  transition-duration: 0.5s;
+  color: var(--brand-offGreen);
+}
+
+.hobbyImg{
+    display: flex-box;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 25rem;
+    max-height: 14rem;
+}
+
+@media screen and (max-width: 700px) {
+  .hobbyImg {
+    flex-direction: column; 
+  }
+
+  .button-nav{
+    margin-bottom: 0.25rem;
+  }
+} 
